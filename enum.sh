@@ -18,5 +18,5 @@ fi
 echo "[+] assetfinder - subdomain recon step..."
 assetfinder $url >> enum_$url/recon/subdomains.txt
 
-cat enum_$url/recon/assets.txt | grep $url >> enum_$url/final.txt
+cat enum_$url/recon/subdomains.txt | grep $url >> enum_$url/final.txt
 
