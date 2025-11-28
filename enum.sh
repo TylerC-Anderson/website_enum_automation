@@ -2,6 +2,11 @@
 
 url=$1
 
+if [ ! $1 ];then
+	echo "[ERROR] Please include a starting domain to enumerate"
+	return -1
+fi
+
 if [ ! -d "enum_$url" ];then 
 	mkdir enum_$url
 fi
